@@ -1,7 +1,10 @@
 :root {
+
+    --white: #FFFFFF;
+
     /* Main */
     --main-00: #020307;
-    --main-50: #0B0E14;
+    --main-50: #192131;
     --main-100: #1A1E26;
 
     /* Secondary */
@@ -48,4 +51,12 @@
 
     --logo-width: 36px;
     --logo-width-small: 32px;
+
+    --gradient-secondary-100: linear-gradient(to bottom right,
+            var(--secondary-50) 0%,
+            rgba(208, 216, 255, 0.3) 100%);
+   
+            --moonshine-radius: 360px;
+    --moonshine-blur: 200px;
+    --moonshine-color: var(--secondary-00);
 }

@@ -5,7 +5,6 @@ header {
     align-items: center;
     padding: var(--size-large);
     gap: var(--size-large);
-    background-color: var(--section-bg);
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -16,7 +15,6 @@ header {
 
 .header_title {
     white-space: nowrap;
-    color: var(--text-secondary);
 }
 
 .header_nav {

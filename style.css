@@ -24,6 +24,7 @@ html {
 }
 
 body {
+    position: relative;
     width: 100%;
     max-width: 1440px;
     height: 100vh;
@@ -44,7 +45,12 @@ body {
     }
 }
 
-h1,
+h1 {
+    color: var(--text-secondary);
+    font-size: var(--font-size-x-large);
+    font-weight: 200;
+}
+
 h2,
 h3,
 h4,
@@ -52,10 +58,6 @@ h5,
 h6 {
     font-weight: 500;
     color: var(--text-secondary);
-}
-
-h1 {
-    font-size: var(--font-size-x-large);
 }
 
 h2 {
@@ -73,6 +75,25 @@ h4 {
 a,
 li {
     font-size: var(--font-size-medium);
+}
+
+p {
+    font-size: var(--font-size-small);
+    font-weight: 400;
+    color: var(--text-secondary);
+}
+
+.light-bg {
+    position: absolute;
+    top: -180px;
+    left: -150px;
+    width: 34%;
+    aspect-ratio: 1 / 1;
+    background: radial-gradient(circle at 50% 50%,
+            rgba(255, 255, 255, 0.15),
+            transparent 70%);
+    pointer-events: none;
+    border-radius: 50%;
 }
 
 @media (max-width: 768px) {
