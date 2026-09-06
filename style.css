@@ -34,7 +34,8 @@ body {
     gap: var(--size-large);
     background-image: url('assets/img/bg.png');
     background-size: contain;
-    background-position: bottom left;
+    background-position-y: bottom;
+    background-position-x: 0px;
     background-repeat: no-repeat;
     overflow-x: hidden;
 }
