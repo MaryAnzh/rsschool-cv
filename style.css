@@ -58,13 +58,23 @@
 html {
     font-size: 16px;
     background-color: var(--background);
+    display: flex;
+    justify-content: center;
     color: var(--text-primary);
 }
 
 body {
     width: 100%;
+    max-width: 1440px;
     min-height: 100vh;
     line-height: 1.6;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: var(--size-large);
+    background-image: url('assets/bg.png');
+    background-size: contain;
+    background-position: bottom left;
+    background-repeat: no-repeat;
 }
 
 h1,
