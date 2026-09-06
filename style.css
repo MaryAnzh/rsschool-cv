@@ -117,3 +117,26 @@ h4 {
         gap: var(--size-medium);
     }
 }
+
+header {
+    background-color: var(--section-bg);
+    padding: var(--size-large);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+main {
+    padding: var(--size-large);
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-large);
+}
+
+footer {
+    background-color: var(--section-bg);
+    padding: var(--size-large);
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+}
