@@ -1,0 +1,21 @@
+footer {
+    padding: var(--size-large);
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+}
+
+.footer_list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: var(--size-large);
+}
+
+.footer_list li {
+    width: fit-content;
+    display: flex;
+    padding: var(--size-small) var(--size-medium);
+    border-radius: var(--border-radius-small);
+    color: var(--text-secondary);
+    background-color: var(--opacity-bg);
+}

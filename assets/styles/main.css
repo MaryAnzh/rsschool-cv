@@ -1,0 +1,22 @@
+main {
+    padding: var(--size-large);
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-large);
+}
+
+.section {
+    padding: var(--size-xx-large);
+    background-color: var(--section-bg);
+    border-radius: var(--border-radius-medium);
+    display: flex;
+    gap: var(--size-large);
+}
+
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        padding: var(--size-large);
+        gap: var(--size-medium);
+    }
+}
