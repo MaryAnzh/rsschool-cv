@@ -14,8 +14,8 @@ main {
     height: fit-content;
     display: flex;
     flex-direction: column;
-    padding: 0 var(--size-medium);
-    gap: var(--size-large);
+    padding: var(--size-x-large);
+    gap: var(--size-x-large);
 }
 
 .section {
@@ -153,7 +153,7 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding-left: var(--size-x-large);
+    padding-left: 48px;
 }
 
 
@@ -186,6 +186,11 @@ main {
 }
 
 @media (max-width: 768px) {
+    .main_content {
+        padding: var(--size-large);
+        gap: var(--size-large);
+    }
+
     .section {
         padding: var(--size-medium);
         gap: var(--size-x-large);
@@ -211,8 +216,9 @@ main {
         grid-row: 3 / 4;
         flex-direction: row;
         align-items: flex-start;
-        background-position-y: bottom -100px;
-        background-position-x: right -148px;
+        background-position-y: bottom -500%;
+        background-position-x: right -65%;
+        background-size: 64%;
     }
 
     .main_self-introduction_photo img {
