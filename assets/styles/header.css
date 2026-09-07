@@ -17,6 +17,11 @@ header {
     white-space: nowrap;
 }
 
+.header_title span {
+    color: var(--text-muted);
+    font-size: var(--font-size-small);
+}
+
 .header_nav {
     width: 100%;
     height: fit-content;

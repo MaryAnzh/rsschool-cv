@@ -238,6 +238,8 @@ main {
     font-size: 24px;
     font-weight: 200;
     justify-self: flex-end;
+    transform: rotate(0deg);
+    transition: transform var(--transition-duration);
 }
 
 .skills_list li span:nth-of-type(3) {
@@ -252,11 +254,75 @@ main {
     font-size: var(--font-size-x-small);
 }
 
+.skills_list li:hover span:nth-of-type(2) {
+    transform: rotate(180deg);
+
+}
+
 .skills_list li:hover span:nth-of-type(3) {
     max-height: 50px;
     opacity: 1;
     transform: translateY(0);
 }
+
+.code_example_list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-medium);
+}
+
+.code_item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-small);
+    padding: var(--size-small);
+    border-bottom: 1px solid var(--border-color);
+    cursor: pointer;
+}
+
+.code_item input {
+    display: none;
+}
+
+.code_title {
+    font-size: var(--font-size-medium);
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.code_title::after {
+    content: "+";
+    font-size: var(--font-size-large);
+    transition: transform var(--transition-duration);
+}
+
+.code_item input:checked+.code_title::after {
+    transform: rotate(45deg);
+}
+
+.code_content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all var(--transition-duration) ease;
+}
+
+.code_item input:checked~.code_content {
+    max-height: 950px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+pre {
+    background: var(--main-100);
+    padding: var(--size-small);
+    border-radius: var(--border-radius-medium);
+    overflow-x: auto;
+}
+
 
 @media (max-width: 1024px) {
     .main_self-introduction_photo {

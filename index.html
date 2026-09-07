@@ -10,7 +10,8 @@
         <span class="light-bg"></span>
         <header>
             <img class="header_logo" src="assets/img/logo.webp" alt="Logo">
-            <h1 class="header_title">Maryia Vashchayeva CV (CSS/HTML)</h1>
+            <h1 class="header_title">Maryia Vashchayeva CV
+                <span>(CSS/HTML)</span></h1>
             <nav class="header_nav">
                 <ul class="header_nav_list">
                     <li><a href="#self-introduction">Self introduction</a></li>
@@ -78,15 +79,7 @@
                             </ul>
 
                         </div>
-                        <p class="main_self-introduction_about-me_text">
-                            I have practical experience working with
-                            AI‑powered development tools, including
-                            Microsoft Copilot, using AI assistance for code
-                            generation, refactoring, documentation,
-                            architectural decisions, and improving developer
-                            productivity across both frontend and backend
-                            tasks.
-                        </p>
+
                         <p class="main_self-introduction_about-me_text">
                             Additionally, I developed backend integration with
                             the Binance API as part of my Crypto‑Trade project,
@@ -141,14 +134,14 @@
                     <ul class="skills_list">
                         <li>
                             <span>HTML</span>
-                            <span>+</span>
+                            <span>▾</span>
                             <span>Semantic markup, accessibility, clean
                                 structure for scalable UI.</span>
                         </li>
 
                         <li>
                             <span>CSS</span>
-                            <span>+</span>
+                            <span>▾</span>
                             <span>Responsive layouts, animations,
                                 component‑based styling with Emotion & Styled
                                 Components.</span>
@@ -156,21 +149,21 @@
 
                         <li>
                             <span>JavaScript</span>
-                            <span>+</span>
+                            <span>▾</span>
                             <span>ES6+, async logic, modular architecture, DOM
                                 manipulation, clean code practices.</span>
                         </li>
 
                         <li>
                             <span>TypeScript</span>
-                            <span>+</span>
+                            <span>▾</span>
                             <span>Strong typing, interfaces, generics, improving
                                 reliability and maintainability of code.</span>
                         </li>
 
                         <li>
                             <span>React</span>
-                            <span>+</span>
+                            <span>▾</span>
                             <span>Hooks, context, reusable components,
                                 component‑driven architecture, UI performance
                                 optimization.</span>
@@ -178,14 +171,14 @@
 
                         <li>
                             <span>Angular</span>
-                            <span>+</span>
+                            <span>▾</span>
                             <span>Signals, standalone components, reactive UI
                                 patterns, clean modular architecture.</span>
                         </li>
 
                         <li>
                             <span>Node.js</span>
-                            <span>+</span>
+                            <span>▾</span>
                             <span>Backend logic, async workflows, API
                                 integration, server‑side architecture
                                 fundamentals.</span>
@@ -193,42 +186,42 @@
 
                         <li>
                             <span>NestJS</span>
-                            <span>+</span>
+                            <span>▾</span>
                             <span>REST APIs, modular design, DTOs, validation,
                                 guards, scalable backend structure.</span>
                         </li>
 
                         <li>
                             <span>PostgreSQL</span>
-                            <span>+</span>
+                            <span>▾</span>
                             <span>Relational schema design, queries, migrations,
                                 efficient data modeling.</span>
                         </li>
 
                         <li>
                             <span>Prisma ORM</span>
-                            <span>+</span>
+                            <span>▾</span>
                             <span>Schema modeling, migrations, type‑safe
                                 database access, clean data layer.</span>
                         </li>
 
                         <li>
                             <span>Docker</span>
-                            <span>+</span>
+                            <span>▾</span>
                             <span>Containerization, environment isolation,
                                 backend deployment, working with VPS.</span>
                         </li>
 
                         <li>
                             <span>Storybook</span>
-                            <span>+</span>
+                            <span>▾</span>
                             <span>Building UI‑Kit, documenting components,
                                 interactive controls, Vite‑powered
                                 preview.</span>
                         </li>
                         <li>
                             <span>AI Integration</span>
-                            <span>+</span>
+                            <span>▾</span>
                             <span>LLM‑assisted development: Copilot, Gemini,
                                 OpenAI; backend integration, using API public
                                 keys.</span>
@@ -236,7 +229,7 @@
 
                         <li>
                             <span>Teamwork</span>
-                            <span>+</span>
+                            <span>▾</span>
                             <span>Clear communication, non‑conflict,
                                 collaborative workflow, clean architecture
                                 mindset.</span>
@@ -244,7 +237,7 @@
 
                         <li>
                             <span>Vite Testing</span>
-                            <span>+</span>
+                            <span>▾</span>
                             <span>Mocking API, unit tests for frontend &
                                 backend, fast dev environment with isolated
                                 modules.</span>
@@ -253,25 +246,137 @@
                     </ul>
                 </section>
 
-                <section id="code-example" class="section main_code-example">
+                <section id="code-example"
+                    class="section main_code-example">
                     <h2>Code Example</h2>
-                    <pre class="code-example">
-                        <code>
-                            &lt;!DOCTYPE html&gt;
-                            &lt;html lang="en"&gt;
-                            &lt;head&gt;
-                                &lt;meta charset="UTF-8"&gt;
-                                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-                                &lt;link rel="stylesheet" href="style.css"&gt;
-                                &lt;title&gt;HTML CSS &amp; Git Basics&lt;/title&gt;
-                            &lt;/head&gt;
-                            &lt;body&gt;
-                                ...
-                            &lt;/body&gt;
-                            &lt;/html&gt;
-                        </code>
-                    </pre>
+
+                    <div class="code_example_list">
+
+                        <label class="code_item">
+                            <input type="checkbox">
+                            <span class="code_title">Codewars</span>
+                            <div class="code_content">
+                                <pre><code>
+// Javascript from the Inside #2: Filter
+Array.prototype.filter = function (fun, ctx) {
+    const newArr = [];
+    this.forEach((v, i, arr) => {
+        if (fun.apply(ctx, [v, i, arr])) {
+            newArr.push(v)
+        }
+    });
+
+    return newArr;
+}
+                </code></pre>
+                            </div>
+                        </label>
+
+                        <label class="code_item">
+                            <input type="checkbox">
+                            <span class="code_title">SCSS</span>
+                            <div class="code_content">
+                                <pre><code>
+/* ---------- SIZE MAP ---------- */
+$btn-sizes: (
+  xsm: (
+    height: 20px,
+    padding: 4px 8px,
+...),
+...);
+/* ---------- MIXINS ---------- */
+@mixin btn-size($height, $padding, $gap, $radius, $font-size, $line-height, $img-size, $icon-size) {
+  height: $height;
+  padding: $padding;
+...
+  .btn-img {
+    width: $img-size;
+    height: $img-size;
+  }
+}
+@mixin btn-size-map($key) {
+  $map: map-get($btn-sizes, $key);
+  @include btn-size(
+    map-get($map, height),
+    map-get($map, padding),
+...);
+}
+/* ---------- SIZES ---------- */
+  &.btn--sm {
+    @include btn-size-map(sm);
+  }
+...
+                </code></pre>
+                            </div>
+                        </label>
+
+                        <label class="code_item">
+                            <input type="checkbox">
+                            <span class="code_title">React</span>
+                            <div class="code_content">
+                                <pre><code>
+import { Footer, Header } from '~components';
+import * as S from './styled';
+
+export const GamesPage = () => {
+    return (
+        <S.GamesPageWrap>
+            &lt;Header isGamePage /&gt;
+            &lt;s.GamesWrapper /&gt;
+            &lt;Footer /&gt;
+        </S.GamesPageWrap>);
+};              </code></pre>
+                            </div>
+                        </label>
+
+                        <label class="code_item">
+                            <input type="checkbox">
+                            <span class="code_title">Angular</span>
+                            <div class="code_content">
+                                <pre><code>
+import { inject } from '@angular/core';
+import { CanActivateFn, Router } from '@angular/router';
+import { AuthStore } from '../store/auth-store';
+import { AUTH, LOGIN } from '../../shared';
+
+export const authGuard: CanActivateFn = () => {
+  const store = inject(AuthStore);
+  const router = inject(Router);
+
+  if (!store.isAuth()) {
+    router.navigate([`${AUTH}/${LOGIN}`]);
+    return false;
+  }
+  return true;
+};
+
+                </code></pre>
+                            </div>
+                        </label>
+
+                        <label class="code_item">
+                            <input type="checkbox">
+                            <span class="code_title">NodeJs</span>
+                            <div class="code_content">
+                                <pre><code>
+const checkOutputPath = (outputFolderPath: string, arr: string[], inputFileName: string, index = 0) => {
+    const baseName = path.basename(inputFileName, path.extname(inputFileName));
+    const name = index === 0 ? baseName : `${baseName}_${index}`;
+    const fileName = `${name}.webp`;
+    const p = path.join(outputFolderPath, fileName);
+
+    if (arr.includes(p)) {
+        return checkOutputPath(outputFolderPath, arr, inputFileName, index + 1);
+    }
+    return { path: p, name };
+};
+                </code></pre>
+                            </div>
+                        </label>
+
+                    </div>
                 </section>
+
                 <section id="education-projects"
                     class="section main_education-projects">
                     <h2>Education Projects</h2>
