@@ -2,6 +2,7 @@
 
 @import url('assets/styles/reset.css');
 @import url('assets/styles/variable.css');
+@import url('./assets/styles/button.css');
 
 @import url('assets/styles/header.css');
 @import url('assets/styles/main.css');
@@ -21,12 +22,13 @@ html {
     font-size: var(--font-size-medium);
     background-color: var(--background);
     color: var(--text-primary);
+    scroll-behavior: smooth;
 }
 
 body {
     position: relative;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1920px;
     height: 100vh;
     line-height: 1.6;
     display: grid;
@@ -62,7 +64,7 @@ h6 {
 }
 
 h2 {
-    font-size: var(--font-size-large);
+    font-size: var(--font-size-x-large);
 }
 
 h3 {
@@ -97,6 +99,22 @@ p {
     border-radius: 50%;
 }
 
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-size: var(--font-size-medium);
+    padding: var(--size-small) var(--size-large);
+    border-radius: var(--border-radius-medium);
+    border: none;
+    cursor: pointer;
+    transition: background var(--transition-duration) ease;
+    gap: var(--size-small);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
 @media (max-width: 768px) {
     html {
         font-size: var(--font-size-small);
@@ -107,7 +125,7 @@ p {
     }
 
     h2 {
-        font-size: var(--font-size-medium);
+        font-size: var(--font-size-large);
     }
 
     h3 {
@@ -117,5 +135,12 @@ p {
     a,
     li {
         font-size: var(--font-size-small);
+    }
+
+    button {
+        font-size: var(--font-size-small);
+        padding: var(--size-x-small) var(--font-size-medium);
+        border-radius: var(--border-radius-medium);
+        gap: var(--size-x-small);
     }
 }

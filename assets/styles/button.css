@@ -1,0 +1,24 @@
+button[type="accent"] {
+    background: var(--secondary-00);
+    color: var(--text-primary);
+    box-shadow: 0 0 12px rgba(125, 151, 241, 0.4);
+}
+
+button[type="accent"]:hover,
+a:hover button[type="accent"] {
+    background: var(--secondary-50);
+}
+
+button[type="base"] {
+    background: var(--main-100);
+    color: var(--text-primary);
+}
+
+button[type="base"]:hover {
+    background: var(--main-50);
+}
+
+button[type="accent"]:active,
+button[type="base"]:active {
+    transform: scale(0.97);
+}
