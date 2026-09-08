@@ -119,6 +119,27 @@ svg {
     width: 24px;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(4px);
+    border-radius: var(--border-radius-medium);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-50);
+    border-radius: var(--border-radius-large);
+    border: 2px solid var(--main-50);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-00);
+}
+
 @media (max-width: 768px) {
     html {
         font-size: var(--font-size-small);

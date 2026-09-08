@@ -393,7 +393,12 @@ export const authGuard: CanActivateFn = () => {
                             <span class="code_title">NodeJs</span>
                             <div class="code_content">
                                 <pre><code>
-const checkOutputPath = (outputFolderPath: string, arr: string[], inputFileName: string, index = 0) => {
+const checkOutputPath = (
+        outputFolderPath: string, 
+        arr: string[], 
+        inputFileName: string, 
+        index = 0
+    ) => {
     const baseName = path.basename(inputFileName, path.extname(inputFileName));
     const name = index === 0 ? baseName : `${baseName}_${index}`;
     const fileName = `${name}.webp`;
