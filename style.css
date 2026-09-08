@@ -64,7 +64,7 @@ h6 {
 }
 
 h2 {
-    font-size: var(--font-size-x-large);
+    font-size: var(--font-size-heading);
 }
 
 h3 {
@@ -115,6 +115,10 @@ button {
     white-space: nowrap;
 }
 
+svg {
+    width: 24px;
+}
+
 @media (max-width: 768px) {
     html {
         font-size: var(--font-size-small);
@@ -125,7 +129,7 @@ button {
     }
 
     h2 {
-        font-size: var(--font-size-large);
+        font-size: var(--font-size-heading-x);
     }
 
     h3 {
