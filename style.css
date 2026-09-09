@@ -75,6 +75,10 @@ h4 {
     font-size: var(--font-size-small);
 }
 
+h5 {
+    font-size: var(--size-large);
+}
+
 a,
 li {
     font-size: var(--font-size-medium);
@@ -155,6 +159,10 @@ svg {
 
     h3 {
         font-size: var(--font-size-small);
+    }
+
+    h5 {
+        font-size: var(--font-size-medium);
     }
 
     a,
