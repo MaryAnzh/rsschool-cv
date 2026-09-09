@@ -241,6 +241,7 @@ main {
 }
 
 .skills-tags_tag-list_item_front {
+    font-size: var(--font-size-large);
     font-weight: 600;
     transform: rotateX(0deg);
     z-index: 1;
@@ -248,12 +249,14 @@ main {
 
 .skills-tags_tag-list_item_back {
     transform: rotateX(180deg);
-    font-size: var(--font-size-x-small);
     line-height: 1.4;
     background: var(--secondary-100);
     color: var(--main-100);
     z-index: 2;
+}
 
+span.skills-tags_tag-list_item_front {
+    font-size: var(--font-size-large);
 }
 
 .skills-tags_tag-list_item:hover .skills-tags_tag-list_item_front {
