@@ -30,6 +30,7 @@
 
         <main>
             <div class="main_content">
+                
                 <section id="self-introduction"
                     class="section gradient main_self-introduction">
                     <h2>
@@ -283,7 +284,7 @@
                 <section id="code-example"
                     class="section main_code-example">
                     <h2>Code Example</h2>
-
+                    <h4 class="code-example_subtitle">Hold Shift and scroll to move horizontally if needed</h4>
                     <div class="code_example_list">
 
                         <label class="code_item">
@@ -424,14 +425,15 @@ const checkOutputPath = (
                         <input type="radio" name="slider" id="slide1" checked>
                         <input type="radio" name="slider" id="slide2">
                         <input type="radio" name="slider" id="slide3">
-
+                        <input type="radio" name="slider" id="slide4">
+                        <input type="radio" name="slider" id="slide5">
+                        <input type="radio" name="slider" id="slide6">
+                        
                         <div class="projects_slides">
-
-                            <div class="project_cards" id="card1">
-                              
-                                <div class="project_cards_card">
+                             
+                                <div class="project_card" id="card1">
                                     <a title="Click to see web version" class="project_cards_link" href="https://runtime-terror-crypto-trade.netlify.app" target="_blank">
-                                        <img src="./assets/img/crypto.png"
+                                        <img src="./assets/img/crypto.webp"
                                             alt="Crypto Trade App" />
                                     </a>
                                     <div class="project_cards_card_info-wrap">
@@ -462,11 +464,12 @@ A public Binance API is also available for general market data.
                                             </span>
                                         </a>
                                     </div>
-                                </div> 
-                                <div class="project_cards_card">
+                                </div>
+
+                                <div class="project_card" id="card2">
                                 <a title="Click to see repo" class="project_cards_link" href="https://github.com/MaryAnzh/Crypto-Trade-Angular_Task-Backend" target="_blank">
 
-                                        <img src="./assets/img/crypto_backend.png"
+                                        <img src="./assets/img/crypto_backend.webp"
                                             alt="Github repo" />
                                     </a>
                                     <div class="project_cards_card_info-wrap">
@@ -494,14 +497,10 @@ It provides a stable backend foundation for authentication, key management, and 
                                         </a>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="project_cards"
-                                id="card2">
-                            
-                            <div class="project_cards_card">
+                                                
+                            <div class="project_card" id="card3">
                                 <a title="Click to see web version" class="project_cards_link" href="https://slot-game-for-bootcamp-2023.netlify.app/" target="_blank">
-                                    <img src="./assets/img/slot-game.png"
+                                    <img src="./assets/img/slot-game.webp"
                                             alt="React Game Project" />
                                 </a>
                                 <div class="project_cards_card_info-wrap">
@@ -529,10 +528,11 @@ It provides a stable backend foundation for authentication, key management, and 
                                     </a>
                                 </div>
                             </div>
-
-                             <div class="project_cards_card">
+                            
+                             <div class="project_card" id="card4">
+                                
                                 <a title="Click to see web version" class="project_cards_link" href="https://maryanzh.github.io/Gem-puzzle/gem-puzzle/" target="_blank">
-                                    <img src="./assets/img/gem.png"
+                                    <img src="./assets/img/gem.webp"
                                             alt="Gem Game Project" />
                                 </a>
                                 <div class="project_cards_card_info-wrap">
@@ -560,13 +560,9 @@ It is a classic sliding‑puzzle game (“15 puzzle”) implemented on Canvas an
                                 </div>
                             </div>
 
-                        </div>
-
-                        <div class="project_cards" id="card3">
-
-                            <div class="project_cards_card">
+                            <div class="project_card" id="card5">
                                     <a title="Click to see web version" class="project_cards_link" href="https://github.com/MaryAnzh/nodejs-2026q1-knowledge-hub" target="_blank">
-                                        <img src="./assets/img/hub.png"
+                                        <img src="./assets/img/hub.webp"
                                                 alt="nodejs-2026q1-knowledge-hub" />
                                     </a>
                                     <div class="project_cards_card_info-wrap">
@@ -594,8 +590,7 @@ It is a classic sliding‑puzzle game (“15 puzzle”) implemented on Canvas an
                                         </a>
                                     </div>
                             </div>
-
-                            <div class="project_cards_info">
+                            <div class="project_cards_info" id="card6">
                                     <p>All my projects your can fine on Github</p>
                                     <a class="main_self-introduction_button"
                                         href="https://github.com/MaryAnzh" target="_blank"
@@ -605,25 +600,47 @@ It is a classic sliding‑puzzle game (“15 puzzle”) implemented on Canvas an
                                         </button>
                                     </a>
                             </div>
-                        </div>                            
 
                     </div>
                         <div class="projects_controls">
                             <label for="slide1"></label>
                             <label for="slide2"></label>
                             <label for="slide3"></label>
+                             <label for="slide4"></label>
+                            <label for="slide5"></label>
+                            <label for="slide6"></label>
                         </div>
                     </div>
 
                 </section>
 
-                <section id="education" class="section main_education">
-                    <h2>Education</h2>
-                    <ul class="education_list">
-                        <li>Belarusian State University</li>
-                        <li>Front-end development courses</li>
-                    </ul>
+                <section id="education" class="section main_education gradient">
+                    <div class="main_education_bg">
+                        <img src="./assets/img/section_bg.webp" alt="abstract background"/>
+                    </div>
+                    <div class="main_education_titles">
+                        <h2>Education</h2>
+                        <h4>Learn more about the courses I’ve taken at RS School</h4>
+                         <a class="main_education_titles_link"
+                            href="https://rs.school" target="_blank"
+                            rel="noopener noreferrer">
+                            <button type="base">
+                                Go to RS School
+                            </button>
+                        </a>
+
+                    </div>
+                    <div class="main_education_cards">
+                        <div class="main_education_cards_card"></div>
+                        <div class="main_education_cards_card"></div>
+                        <div class="main_education_cards_card"></div>
+                        <div class="main_education_cards_card"></div>
+                    </div>
+
                 </section>
+
+                
+
             </div>
         </main>
         <footer>

@@ -10,12 +10,14 @@ a:hover button[type="accent"] {
 }
 
 button[type="base"] {
-    background: var(--main-100);
-    color: var(--text-primary);
+    background: var(--secondary-100);
+    color: var(--main-00);
+    opacity: 1;
+    transition: opacity var(--transition-duration);
 }
 
 button[type="base"]:hover {
-    background: var(--main-50);
+    opacity: 0.8;
 }
 
 button[type="accent"]:active,
