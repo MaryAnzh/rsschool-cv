@@ -34,7 +34,7 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     gap: var(--size-large);
-    background-image: url('assets/img/bg.png');
+    background-image: url('assets/img/bg.webp');
     background-size: contain;
     background-position-y: bottom;
     background-position-x: 0px;
@@ -159,10 +159,6 @@ svg {
 
     h3 {
         font-size: var(--font-size-small);
-    }
-
-    h5 {
-        font-size: var(--font-size-medium);
     }
 
     a,
