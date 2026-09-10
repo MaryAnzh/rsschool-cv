@@ -504,7 +504,6 @@ pre {
     width: 100%;
     display: grid;
     grid-template-columns: auto 700px;
-    grid-template-rows: repeat(3, max-content);
     gap: var(--size-large);
 }
 
