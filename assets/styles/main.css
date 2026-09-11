@@ -161,13 +161,12 @@ main {
   list-style: disc;
 }
 
-.main_self-introduction_button {
+section .main_self-introduction_link {
   width: 100%;
-  height: fit-content;
   z-index: 2;
 }
 
-.main_self-introduction_button button {
+a.main_self-introduction_link {
   width: 100%;
 }
 
@@ -490,8 +489,7 @@ pre {
   color: var(--secondary-50);
 }
 
-.project_cards_info a,
-.project_cards_info a button {
+.project_cards_info a {
   width: auto;
 }
 
@@ -553,7 +551,7 @@ pre {
   color: var(--white);
 }
 
-.main_education_link button {
+section .main_education_link {
   width: 100%;
 }
 
@@ -724,7 +722,7 @@ span.main_education_cards_card_tag {
     width: 50%;
   }
 
-  .main_self-introduction_button {
+  .main_self-introduction_link {
     padding-top: var(--size-x-large);
   }
 
@@ -792,4 +790,50 @@ span.main_education_cards_card_tag {
     width: 100%;
     height: 80px;
   }
+}
+
+.code_item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-small);
+  padding: var(--size-small);
+  border-bottom: 1px solid var(--border-color);
+  cursor: pointer;
+}
+
+.code_item input {
+  display: none;
+}
+
+.code_title {
+  font-size: var(--font-size-medium);
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.code_title::after {
+  content: "+";
+  font-size: var(--font-size-large);
+  transition: transform var(--transition-duration);
+}
+
+.code_item input:checked + .code_title::after {
+  transform: rotate(45deg);
+}
+
+.code_content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all var(--transition-duration) ease;
+}
+
+/* ВАЖНО: теперь pre идёт сразу после label */
+.code_item input:checked + .code_title + .code_content {
+  max-height: 950px;
+  opacity: 1;
+  transform: translateY(0);
 }

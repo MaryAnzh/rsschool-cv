@@ -1,26 +1,25 @@
-button[type="accent"] {
+.accent-color {
   background: var(--secondary-00);
   color: var(--text-primary);
   box-shadow: 0 0 12px rgba(125, 151, 241, 0.4);
 }
 
-button[type="accent"]:hover,
-a:hover button[type="accent"] {
+.accent-color:hover {
   background: var(--secondary-50);
 }
 
-button[type="base"] {
+.base-color {
   background: var(--secondary-100);
   color: var(--main-00);
   opacity: 1;
   transition: opacity var(--transition-duration);
 }
 
-button[type="base"]:hover {
+.base-color:hover {
   opacity: 0.8;
 }
 
-button[type="ghost"] {
+.ghost-color {
   background: transparent;
   color: var(--white);
   padding: var(--size-x-small);
@@ -31,10 +30,6 @@ button[type="ghost"] {
   transition: all var(--transition-duration);
 }
 
-button[type="ghost"]:hover {
-  color: var(--secondary-100);
-}
-
-button:active {
-  transform: scale(0.97);
+.ghost-color:hover {
+  color: var(--secondary-50);
 }
