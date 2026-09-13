@@ -453,7 +453,7 @@ const checkOutputPath = (
           <h2>Projects</h2>
           <h3 class="main_projects_subtitle">CSS slider</h3>
 
-          <div class="projects_slider">
+          <div class="projects_slider" id="slider">
             <input type="radio" name="slider" id="slide1" checked />
             <input type="radio" name="slider" id="slide2" />
             <input type="radio" name="slider" id="slide3" />
@@ -802,12 +802,12 @@ const checkOutputPath = (
     <script>
       window.addEventListener("resize", () => {
         const windowsWidth = window.innerWidth;
+        const slider = document.getElementById("slider");
+        const slide1 = document.getElementById("slide1");
 
-        if (
-          (windowsWidth === 768 || windowsWidth === 769) &&
-          !document.getElementById("slide1").checked
-        ) {
+        if (windowsWidth >= 767 && !slide1.checked) {
           document.getElementById("slide1").checked = true;
+          slider.style.transformBox = "0%";
         }
       });
     </script>

@@ -379,11 +379,23 @@ span.skills-tags_tag-list_item_front {
 }
 
 #slide2:checked ~ .projects_slides {
-  transform: translateX(-33.333%);
+  transform: translateX(-16.67%);
 }
 
 #slide3:checked ~ .projects_slides {
+  transform: translateX(-33.333%);
+}
+
+#slide4:checked ~ .projects_slides {
+  transform: translateX(-50%);
+}
+
+#slide5:checked ~ .projects_slides {
   transform: translateX(-66.666%);
+}
+
+#slide6:checked ~ .projects_slides {
+  transform: translateX(-83.333%);
 }
 
 .projects_controls {
@@ -406,20 +418,17 @@ span.skills-tags_tag-list_item_front {
 
 #slide1:checked ~ .projects_controls label[for="slide1"],
 #slide2:checked ~ .projects_controls label[for="slide2"],
-#slide3:checked ~ .projects_controls label[for="slide3"] {
-  background: var(--secondary-50);
-}
-
-.projects_controls label[for="slide4"],
-.projects_controls label[for="slide5"],
-.projects_controls label[for="slide6"] {
-  display: none;
-}
-
+#slide3:checked ~ .projects_controls label[for="slide3"],
 #slide4:checked ~ .projects_controls label[for="slide4"],
 #slide5:checked ~ .projects_controls label[for="slide5"],
 #slide6:checked ~ .projects_controls label[for="slide6"] {
   background: var(--secondary-50);
+}
+
+.projects_controls label[for="slide2"],
+.projects_controls label[for="slide4"],
+.projects_controls label[for="slide6"] {
+  display: none;
 }
 
 .project_card {
@@ -754,34 +763,10 @@ span.main_education_cards_card_tag {
     width: 600%;
   }
 
-  #slide2:checked ~ .projects_slides {
-    transform: translateX(-16.67%);
-  }
-
-  #slide3:checked ~ .projects_slides {
-    transform: translateX(-33.333%);
-  }
-
-  #slide4:checked ~ .projects_slides {
-    transform: translateX(-50%);
-  }
-
-  #slide5:checked ~ .projects_slides {
-    transform: translateX(-66.666%);
-  }
-
-  #slide6:checked ~ .projects_slides {
-    transform: translateX(-83.333%);
-  }
-
+  .projects_controls label[for="slide2"],
   .projects_controls label[for="slide4"],
-  .projects_controls label[for="slide5"],
   .projects_controls label[for="slide6"] {
     display: block;
-  }
-
-  .project_card {
-    width: 100%;
   }
 
   .project_cards_link {
