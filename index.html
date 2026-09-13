@@ -802,12 +802,10 @@ const checkOutputPath = (
     <script>
       window.addEventListener("resize", () => {
         const windowsWidth = window.innerWidth;
-        const slider = document.getElementById("slider");
         const slide1 = document.getElementById("slide1");
 
         if (windowsWidth >= 767 && !slide1.checked) {
           document.getElementById("slide1").checked = true;
-          slider.style.transformBox = "0%";
         }
       });
     </script>
