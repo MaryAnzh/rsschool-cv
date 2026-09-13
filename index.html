@@ -798,5 +798,18 @@ const checkOutputPath = (
         </li>
       </ul>
     </footer>
+
+    <script>
+      window.addEventListener("resize", () => {
+        const windowsWidth = window.innerWidth;
+
+        if (
+          (windowsWidth === 768 || windowsWidth === 769) &&
+          !document.getElementById("slide1").checked
+        ) {
+          document.getElementById("slide1").checked = true;
+        }
+      });
+    </script>
   </body>
 </html>
